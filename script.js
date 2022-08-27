@@ -8,7 +8,7 @@ rateUsThankYou.style.display = 'block'
 // starting off with rating div as content of rate us component 
 rateUsMain.appendChild( rateUsRating )
 
-document.getElementById("button").onclick = ()=>
+document.getElementById("rate-us-rating-submit").onclick = ()=>
 {
     // changing rate us component's content to thank you div
     rateUsMain.replaceChild( rateUsThankYou, rateUsRating )
