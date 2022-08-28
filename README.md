@@ -11,3 +11,7 @@ I toyed with making it a modal, but then I realised, that you can place a rating
 
 I'm not sure about my js, but I guess I'm just a beginner and gotta learn some libraries / frameworks. So boilerplating it for now.
 Actually - my first time using JS. So the solution is based on my coding experience and stuff I was able to google. Really need to find a JS course. Will pick assignment without JS for now.
+
+The challenge description is referring to state. Is it in ... to some framework?
+
+[custom radio button theming](https://moderncss.dev/pure-css-custom-styled-radio-buttons/)
