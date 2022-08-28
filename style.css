@@ -3,7 +3,8 @@
 :root
 {
     --color-background: hsl(216, 12%, 8%);
-    --color-surface: hsl(216, 19%, 15%);
+    --color-surface-top: hsl(225, 18%, 17%);
+    --color-surface-bottom: hsl(216, 24%, 12%);
     --color-on-surface: hsl(217, 12%, 63%);
     --color-on-surface-variant: hsl(0, 0%, 100%);
     --color-primary: hsl(25, 97%, 53%);
@@ -20,8 +21,9 @@
 }
 p
 {
-    font-size: 15px;
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 150%;
 }
 h1
 {
@@ -34,15 +36,19 @@ body
 {
     font-family: "Overpass";
     background-color: var(--color-background);
+    font-size: 14px;
 }
 /* #endregion */
 
 /* #region CENTERING */
-body, html
+body
 {
     height: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
+    min-height: 100vh;
 }
 /* #endregion */
 
@@ -66,8 +72,8 @@ body, html
 {
     .rate-us-box
     {
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 15px;
+        margin-right: 15px;
     }
 }
 @media only screen and ( min-width: 501px )
@@ -76,81 +82,146 @@ body, html
     {
         margin-left: auto;
         margin-right: auto;
-        width: 284px;
+        width: 22rem;
+        padding: 12px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 }
 .rate-us-box
 {
-    background-color: var(--color-surface);
+    background-image: linear-gradient(var(--color-surface-top), var(--color-surface-bottom));
     color: var(--color-on-surface);
-    padding: 20px;
     border-radius: 20px;
 }
 .rate-us-component
 {
     display: none;
+    margin: 14px;
+    margin: 20px;
 }
+/* #endregion */
+
+/* #region RATE US RATING */
 .rate-us-rating-submit
 {
     background-color: var(--color-primary);
     color: var(--color-on-primary);
     border-style: none;
-    border-radius: 20px;
+    border-radius: 22px;
     width: 100%;
-    height: 40px;
+    height: 44px;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 700;
-    font-size: 12px;
+    margin-top: 5px;
 }
-/* #endregion */
+.rate-us-rating-submit:hover
+{
+    background-color: var(--color-on-primary);
+    color: var(--color-primary);
+}
+.rate-us-rating-submit:disabled
+{
+    background-color: var(--color-secondary);
+    color: var(--color-on-secondary);
+}
+.rate-us-rating-star
+{
+    width: 42px;
+    height: 42px;
+    background-color: var(--color-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 32px;
+}
 
 /* #region RATE US OPTIONS */
 .rate-us-options
 {
-    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    padding: 0px;
-    margin: 0px;
-    margin-bottom: 20px;
+    padding: 0;
     border-style: none;
+    margin-bottom: 15px;
+    margin-top: 25px;
+    justify-content: center;
 }
 .rate-us-option
 {
-    width: 50px;
-    height: 50px;
+    aspect-ratio: 1;
+    width: 100%;
+    display: block;
+    position: relative;
+    margin-right: 18px;
 }
-input[type="radio"].rate-us-option-radio
+.rate-us-option:last-child
 {
-    /*
-    -webkit-appearance: none;
+    margin-right: 0;
+}
+.rate-us-option input[type="radio"]
+{
+    position: absolute;
     display: none;
-    appearance: none;
-    margin: 0;
-    */
+    opacity: 0;
+    height: 0;
+    width: 0;
 }
-.rate-us-option-label
+.rate-us-option-radio
 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
     background-color: var(--color-secondary);
     color: var(--color-on-secondary);
-    border-style: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    margin: 0px;
-    margin-right: 18px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center
 }
-.rate-us-option-label:last-child
-{
-    margin-right: 0px;
-}
-.rate-us-option-label:hover
+.rate-us-option-radio:hover
 {
     background-color: var(--color-secondary-variant);
     color: var(--color-on-secondary-variant);
+}
+.rate-us-option input[type="radio"]:checked
+~ .rate-us-option-radio
+{
+    background-color: var(--color-primary);
+    color: var(--color-on-primary);
+}
+/* #endregion */
+
+/* #endregion */
+
+/* #region RATE US THANK YOU */
+.rate-us-component-thank-you
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.rate-us-thank-you-text
+{
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.rate-us-thank-you-image
+{
+    margin-bottom: 18px;
+    margin-top: 14px;
+}
+.rate-us-thank-you-selected
+{
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    height: 36px;
+    line-height: 38px;
+    border-radius: 18px;
+    padding: 0px 12px 0px 12px;
+    margin-bottom: 18px;
 }
 /* #endregion */

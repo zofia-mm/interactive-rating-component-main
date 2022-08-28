@@ -14,4 +14,12 @@ Actually - my first time using JS. So the solution is based on my coding experie
 
 The challenge description is referring to state. Is it in ... to some framework?
 
-[custom radio button theming](https://moderncss.dev/pure-css-custom-styled-radio-buttons/)
+[custom radio button theming](https://www.w3schools.com/howto/howto_css_custom_checkbox.asp)
+
+```css
+.something
+{
+    margin: 0px;
+    margin-top: 20px;
+}
+```

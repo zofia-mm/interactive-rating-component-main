@@ -18,22 +18,18 @@
 
   <!-- WEBPAGE ITSELF -->
 
-  <div style="flex: 1;"></div>
-
   <div id="rate-us" class="rate-us-box"></div>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/Fobya7" target="_blank">Fobia7</a>.
   </div>
-
-  <div style="flex: 1;"></div>
 
   <!-- RATE US STATES -->
 
   <div id="rate-us-rating" class="rate-us-component">
 
-    <div class="rate-us-option">
+    <div class="rate-us-rating-star">
       <img src="./images/icon-star.svg">
     </div>
 
@@ -44,43 +40,49 @@
     </p>
 
     <fieldset class="rate-us-options">
-      <div class="rate-us-option">
-        <input class="rate-us-option-radio" type="radio" value="value1" name="rating-value">
-        <label class="rate-us-option-label">1</label>
-      </div>
-      <div class="rate-us-option">
-        <input class="rate-us-option-radio" type="radio" value="value1" name="rating-value"/>
-        <label class="rate-us-option-label">2</label>
-      </div>
-      <div class="rate-us-option">
-        <input class="rate-us-option-radio" type="radio" value="value1" name="rating-value"/>
-        <label class="rate-us-option-label">3</label>
-      </div>
-      <div class="rate-us-option">
-        <input class="rate-us-option-radio" type="radio" value="value1" name="rating-value"/>
-        <label class="rate-us-option-label">4</label>
-      </div>
-      <div class="rate-us-option">
-        <input class="rate-us-option-radio" type="radio" value="value1" name="rating-value"/>
-        <label class="rate-us-option-label">5</label>
-      </div>
+      <label class="rate-us-option">
+        <input type="radio" name="rate-us-options" value="1">
+        <span class="rate-us-option-radio">1</span>
+      </label>
+      <label class="rate-us-option">
+        <input type="radio" name="rate-us-options" value="2">
+        <span class="rate-us-option-radio">2</span>
+      </label>
+      <label class="rate-us-option">
+        <input type="radio" name="rate-us-options" value="3">
+        <span class="rate-us-option-radio">3</span>
+      </label>
+      <label class="rate-us-option">
+        <input type="radio" name="rate-us-options" value="4">
+        <span class="rate-us-option-radio">4</span>
+      </label>
+      <label class="rate-us-option">
+        <input type="radio" name="rate-us-options" value="5">
+        <span class="rate-us-option-radio">5</span>
+      </label>
     </fieldset>
 
     <button id="rate-us-rating-submit" class="rate-us-rating-submit">Submit</button>
 
   </div>
   <div id="rate-us-thank-you" class="rate-us-component">
+    <div class="rate-us-component-thank-you">
 
-    <div class="rate-us-thank-you-selected">
-      You selected <!-- Add rating here --> out of 5
+      <div class="rate-us-thank-you-image">
+        <img src="./images/illustration-thank-you.svg" alt="illustration-thank-you">
+      </div>
+
+      <div id="rate-us-thank-you-selected" class="rate-us-thank-you-selected">
+        You selected out of 5
+      </div>
+
+      <h1>Thank you!</h1>
+      <p class="rate-us-thank-you-text">
+        We appreciate you taking the time to give a rating. If you ever need more support, 
+        don’t hesitate to get in touch!
+      </p>
+
     </div>
-
-    <h1>Thank you!</h1>
-    <p>
-      We appreciate you taking the time to give a rating. If you ever need more support, 
-      don’t hesitate to get in touch!
-    </p>
-
   </div>
 
 </body>
