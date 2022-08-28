@@ -20,16 +20,16 @@ Users should be able to:
 Live Site URL: [Check out this solution live!]()
 
 | Desktop rating state |
-| --- |
+| :---: |
 | <img src="readme/screenshot-desktop.jpeg" width=70%> |
 
 | Desktop thank you state |
-| --- |
+| :---: |
 | <img src="readme/screenshot-desktop-thank-you.jpeg" width=70%> |
 
 | Mobile rating state | Mobile thank you state |
-| --- | --- |
-| <img src="readme/screenshot-mobile.png" width=50%> | <img src="readme/screenshot-mobile-thank-you.png" width=50%> |
+| :---: | :---: |
+| <img src="readme/screenshot-mobile.png" width=60%> | <img src="readme/screenshot-mobile-thank-you.png" width=60%> |
 
 
 ## My process
