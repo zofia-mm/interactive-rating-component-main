@@ -44,10 +44,9 @@ Live Site URL: [Check out this solution live!]()
 
 ### What I learned
 
-- This was my first time using JavaScript, so most of my knowleage comes from MDMs [JavaScript basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics).
-<br>
-I'm pretty proud of this part: (I've modified the assigned design a little bit. Submit button is disabled untill user picks a rating, so they cannot submit an empty value. )
-```js
+- This was my first time using JavaScript, so most of my knowleage comes from MDMs [JavaScript basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics). I'm pretty proud of this part: (I've modified the assigned design a little bit. Submit button is disabled untill user picks a rating, so they cannot submit an empty value. )
+
+```javascript
 // starting off with submit button disabled
 document.getElementById("rate-us-rating-submit").disabled = true
 document.getElementsByName("rate-us-options").forEach( element =>
