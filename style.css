@@ -41,7 +41,7 @@ body
 /* #endregion */
 
 /* #region CENTERING */
-body
+body, html
 {
     height: 100%;
     display: flex;
