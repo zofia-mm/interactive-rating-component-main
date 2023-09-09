@@ -17,7 +17,7 @@ Users should be able to:
 
 ### The solution
 
-Live Site URL: [Check out this solution live!]()
+Live Site URL: [Check out this solution live!](https://zofia-mm.github.io/interactive-rating-component-main/)
 
 | Desktop rating state |
 | :---: |
